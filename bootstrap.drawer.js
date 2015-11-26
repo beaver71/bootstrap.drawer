@@ -95,7 +95,7 @@ angular.module('bootstrap.drawer', [])
                     }
                 };
 
-                // PIERO: chiude drawer ad ogni cambio di state
+                // close drawer on state change
                 $rootScope.$on('$stateChangeStart',
                     function (event, toState, toParams, fromState, fromParams) {
                         ctrl.close();
